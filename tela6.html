@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Jobs</title>
+    <link rel="stylesheet" href="estilos/estilo6.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="home/Marca final-branco.svg" class="logotipo" alt="" style="height:6vw">
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="">Sobre</a>
+            <a href="tela5.html"><button class="but">Selecione projetos</button></a>
+            <a href="">
+                <img src="home/profile.jpg" alt="" style="height:4vw;">
+            </a>    
+        </div>
+    </nav>
+
+    <div class="mentoria">
+        <h1>Mentoria</h1>
+
+        <div class="mentoria1">
+            <div class="img">
+                <img src="home/mentoria1.png" alt="">
+            </div>
+            <div class="informacao">
+                <div class="texto">
+                    <h2>Saiba como planejar seu<br>processo de design. </h2>
+                    <p>
+                    A partir das etapas de Implementação,<br> análise, ideação, prototipagem<br>
+                    e imersão, é possível entender o contexto,<br>
+                    analisá-lo, gerar ideias e testá-las,<br>
+                    observando seu impacto antes de<br> implementá-las.
+                    </p>
+                </div>
+
+                <div class="rodape">
+                    <div class="icones">
+                        <img src="home/like.svg" alt="">
+                        <img src="home/comment.svg" alt="">
+                    </div>
+                    <div class="mentor">
+                        <div class="info">
+                            <h4>Lucas Maia</h4>
+                            <h5>Designer Senior<br>
+                                na ThoughtWorks</h5>
+                        </div>
+                        <div class="foto">
+                            <img src="home/profile 2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+
+        <div class="mentoria1">
+            <div class="img">
+                <img src="home/mentoria2.png" alt="">
+            </div>
+            <div class="informacao">
+                <div class="texto">
+                    <h2>Ferramentas que facilitarão<br> seu trabalho </h2>
+                    <p>
+                     As ferramentas de produtividade têm <br> várias utilidades
+                     no cotidiano das <br> empresas e das pessoas. Elas 
+                     oferecem <br> organização e uma melhor comunicação, <br>
+                     entre os funcionários.
+
+                    </p>
+                </div>
+
+                <div class="rodape">
+                    <div class="icones">
+                        <img src="home/like.svg" alt="">
+                        <img src="home/comment.svg" alt="">
+                    </div>
+                    <div class="mentor">
+                        <div class="info">
+                            <h4>Ana Luiza</h4>
+                            <h5>Product Designer<br>
+                                na Localiza</h5>
+                        </div>
+                        <div class="foto">
+                            <img src="home/profile3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+
+       
+
+    </div>
+
+    <div class="mentoria-ex">
+        <h1>Contrate uma mentoria exclusiva</h1>
+        <img src="home/tabela-mentoria.svg" alt="">
+        <div class="botoes">
+            <button class="contratar">Contratar</button>
+        </div>
+    </div>
+
+
+    <div class="overlay">
+        <div class="modal-conteudo">
+            <div class="modal-titulo">
+                <h3>Solicitação de mentoria enviada</h3>
+            </div>
+            <div class="modal-content">
+                <p><b>Você acabou de solicitar uma mentoria exclusiva</b><br> 
+                    Enviamos um link de pagamento para seu email,<br>
+                    lá você pode selecionar qual opção deseja.
+            </div>
+            <div class="modal-botoes">
+                <input class="botao-base botao-obrigada" id="formulario" type="submit" value="Entendi">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img class ="img-footer" style="width: 7.2vw;" src="home/Marca final.svg" style="height: 50px;"alt="">
+        <div class="menu1">
+            <p><b>Explorar</b></p>
+            <a href="google.com">Inicio</a>
+            <a href="google.com">Sobre</a>
+        </div>
+        <div class="menu2">
+            <p><b>Ajuda</b></p>
+            <a href="google.com">FAQ</a>
+            <a href="google.com">Contato</a>
+        </div>
+        <div class="menu3">
+            <p><b>Siga-nos</b></p>
+           <div class="redes">
+               <a href="google.com"><img src="home/instagram.svg" alt=""></a>
+               <a href="google.com"><img src="home/youtube.svg" alt=""></a>
+               <a href="google.com"><img src="home/twitter.svg" alt=""></a>
+           </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+
+    let botao = document.querySelector(".mentoria-ex button");
+    let close_overlay = document.querySelector(".modal-botoes .botao-obrigada");
+    let overlay = document.querySelector(".overlay");
+
+    
+    close_overlay.addEventListener("click", function(){
+       overlay.classList.remove("active");
+    })
+
+    botao.addEventListener("click", function(){
+       overlay.classList.add("active");
+    }) 
+
+</script>
+</html>
