@@ -102,7 +102,10 @@
 
     <div class="mentoria-ex">
         <h1>Contrate uma mentoria exclusiva</h1>
-        <img src="home/tabela-mentoria.svg" alt="">
+        <img class="tabela1"src="home/tabela-mentoria.svg" alt="">
+        <!-- <img src="home/tabela-mentoria2-hover.svg" alt=""> -->
+        <img class="tabela2" src="home/tabela-mentoria2.svg" alt="">
+        <!-- <img src="home/tabela-mentoria-hover.svg" alt=""> -->
         <div class="botoes">
             <button class="contratar">Contratar</button>
         </div>
@@ -117,7 +120,6 @@
             <div class="modal-content">
                 <p><b>Você acabou de solicitar uma mentoria exclusiva</b><br> 
                     Enviamos um link de pagamento para seu email,<br>
-                    lá você pode selecionar qual opção deseja.
             </div>
             <div class="modal-botoes">
                 <button class="botao-base botao-obrigada">Entendi</button>
@@ -154,7 +156,27 @@
     let close_overlay = document.querySelector(".modal-botoes .botao-obrigada");
     let overlay = document.querySelector(".overlay");
 
-    
+    let foto1 = document.querySelector(".mentoria-ex .tabela1");
+    let foto2 = document.querySelector(".mentoria-ex .tabela2");
+
+    foto1.addEventListener("click",function(){
+        if(foto2.classList.contains("active")){
+            foto2.classList.remove("active");
+            foto1.classList.add("active");
+        }else{
+            foto1.classList.toggle("active");
+        }
+    })
+
+    foto2.addEventListener("click",function(){
+        if(foto1.classList.contains("active")){
+            foto1.classList.remove("active");
+            foto2.classList.add("active");
+        }else{
+            foto2.classList.toggle("active");
+        }
+    })
+
     close_overlay.addEventListener("click", function(){
        overlay.classList.remove("active");
     })

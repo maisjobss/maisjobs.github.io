@@ -147,6 +147,11 @@ nav .menu img{
 .mentoria-ex img{
     height: 30vw;
     margin-bottom: 1vw;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+.mentoria-ex img::selection{
+    background-color: #240B47;
 }
 .mentoria-ex button{
 
@@ -164,6 +169,10 @@ nav .menu img{
     color: white;
     
     cursor: pointer;
+}
+.mentoria-ex .tabela1.active,.mentoria-ex .tabela2.active{
+    border: 0.4vw solid #FC8C28;
+    border-radius: 10%;
 }
 
 /* MODAL 1 - aceitar projeto */
